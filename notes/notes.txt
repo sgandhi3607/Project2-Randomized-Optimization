@@ -1,35 +1,67 @@
-ALGORITHMS TO USE:
+TO Do:
 
-1) randomized hill climbing
-2) simulated annealing
-3) a genetic algorithm
-4) MIMIC
+- CONTINUE READING: (Isbell's link, starting from time complexity)  
 
-################################ Part 1 #######################################
+- Look at MLRose's optimization problems, determine if they illustrate differences between the different algorithms 
 
+- Go through preprocessing of adult dataset 
 
-NOTE: Use first 3 to choose weights for NN (instead of backprop). N
-      Notice that these are continious instead of discrete values
+- Test different NN architectures (Start with WBCD)
 
 
-################################ Part 2 #######################################
+
+PREP
+
+-- Watch the videos on MIMIC
+
+-- 5 Sentence description of each algorithm 
 
 
-Apply all 4 algos to 3 optimization problems:
-      - using fitness functions you're trying to max, instead of minimizing cost
-      - Use discrete valued parameter spaces. Bit strings preferrable
-      - 3 PROBLEMS:
-            1) Demonstrate strength of simulated annealing
-            2) Demonstrate strength of a genetic algorithm
-            3) Demonstrate strength of MIMIC
-      - Remember: Problems don't have to be difficult. Straightforward problems
-                  illustrating differences btw the algos are good
+
+BRAINSTORMING: 
+
+Neural Network: 
+
+-- General Method: 
+	- Create list of hyperparameters to tune, make a table (3 / 4 for loops maybe?)
+	- Tweak the following: 
 
 
-################################ OTHER INSTRUCTIONS ############################
+OPTIMIZATION PROBLEMS: 
 
-What to turn in:
+-- Algorithms: 
+	- MIMIC: - generating MSTs, uses conditional probabilities,
+		 - Works better (in comparison) when C(x) is costly, and it's better to extract more info with each iteration 
+	   	 - Talk about this tradeoff when comparing the different algorithms 
+	- GAs: don't do all this (above), but run a lot more iterations and evaluate C(x) a lot more times
+	- 
+	-
 
-  1) A file named README.txt that contains instructions for running your code
+-- How to choose problems: 
+	- Idea for dividing them:  
+	- Choosing simple problems means we know the structure, we know the solution, 
+	  easier to illustrate behaviour of algorithm
+	- Complicated problems would mean we may not be able to tie characteristics of 
+	  the dataset to the behaviour of the algorithms 
 
-  2) a file named yourgtaccount-analysis.pdf that contains your writeup.
+-- Possible choice of problems 
+	BLOG POST 
+	- count ones problem (no local optima?) 
+	- four peaks (two local optima, two global optima? 
+	- knapsack (NP hard problem, but what's the structure of the solution) 
+	ASSIGNMENT AND PAPER
+	- K color problem (Might depend on the structure of the graph? How did Isbell deal with this in his paper?)  
+
+
+
+REPORT: 
+
+- Why did we choose the problems we did? (Optimization)]
+	-- K coloring depends on input graph? 
+	   - graph characteristics vary, easier to pick problem in which you just tweak the input size, not shape as well
+
+
+SPECIFIC Problems: 
+
+GENETIC ALGORITHM: 
+	- Can be parallized, in practice might run faster   
